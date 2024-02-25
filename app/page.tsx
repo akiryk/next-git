@@ -23,6 +23,7 @@ export default async function Home({ searchParams }: { searchParams: Params }) {
       <h1>Hello!</h1>
       <p>First paragraph</p>
       <p>Second paragraph</p>
+      <p>Third paragraph</p>
     </main>
   );
 }
