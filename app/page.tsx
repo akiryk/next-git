@@ -1,5 +1,22 @@
 import styles from "./page.module.css";
+import { URLSearchParams } from "url";
 
-export default function Home() {
-  return <main className={styles.main}>Hello!</main>;
+type Params = URLSearchParams & {
+  theme: string;
+};
+
+export default async function Home({ searchParams }: { searchParams: Params }) {
+  let dynamicClass;
+  switch (searchParams.theme) {
+    case "red":
+      dynamicClass = styles["main-red"];
+      break;
+    case "blue":
+      dynamicClass = styles["main-blue"];
+      break;
+    default:
+      dynamicClass = styles.main;
+  }
+
+  return <main className={dynamicClass}>Hello!</main>;
 }
