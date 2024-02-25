@@ -18,5 +18,11 @@ export default async function Home({ searchParams }: { searchParams: Params }) {
       dynamicClass = styles.main;
   }
 
-  return <main className={dynamicClass}>Hello!</main>;
+  return (
+    <main className={dynamicClass}>
+      <h1>Hello!</h1>
+      <p>First paragraph</p>
+      <p>Second paragraph</p>
+    </main>
+  );
 }
