@@ -22,7 +22,7 @@ export default async function Home({ searchParams }: { searchParams: Params }) {
     <main className={dynamicClass}>
       <h1>Hello!</h1>
       <p>First paragraph</p>
-      <p>Second paragraph</p>
+      <p>Second IMPORTANT paragraph</p>
       <p>Third paragraph</p>
     </main>
   );
